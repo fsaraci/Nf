@@ -1,0 +1,31 @@
+### Get all Posts
+GET http://127.0.0.1:8080/v2/api/posts HTTP/1.1
+
+### Get Post by ID
+GET http://127.0.0.1:8080/v2/api/posts/:1 HTTP/1.1
+
+### Post new Post
+POST  http://localhost:8080/v2/api/posts/new HTTP/1.1
+Content-Type: application/json
+
+{
+     "name": "Task One", 
+     "description": "This is a task"
+}
+
+### Update Post by ID
+PUT  http://localhost:8080/v2/api/posts/edit/:1 HTTP/1.1
+Content-Type: application/json
+
+{
+     
+     "name": "Task One", 
+     "description": "This is a task"
+}
+
+### Delete Post by ID
+DELETE   http://localhost:8080/v2/api/posts/delete/:1 HTTP/1.1
+
+
+
+
